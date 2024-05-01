@@ -1,0 +1,22 @@
+.card {
+    background-color: var(--card_sec_bg);
+    cursor: pointer; 
+    transition: background 0.3s ease, transform 0.3s ease; 
+}
+
+.card:hover {
+    background-color: var(--card_bg); 
+    transform: translateY(-5px); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.play_btn {
+    display: none; 
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.card:hover .play_btn {
+    display: block; 
+    opacity: 1; 
+}

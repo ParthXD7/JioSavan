@@ -1,0 +1,39 @@
+input[type="range"] {
+    appearance: none;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #7A7A7A;
+    opacity: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 14px;
+    height: 14px; 
+    background-color: #FF6B6B; 
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    opacity: 0; 
+    z-index: 43;
+    position: relative;
+    transition: opacity 0.2s ease;
+    opacity: 1; 
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+    opacity: 1; 
+}
+
+.active_progress {
+    background-color: #FF6B6B; 
+    height: 4px;
+    width: 0%; 
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
